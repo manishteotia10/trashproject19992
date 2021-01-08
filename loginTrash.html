@@ -1,0 +1,60 @@
+
+
+
+<html>
+<head><link rel="stylesheet" href="loginStyle.css"></head>
+
+<body>
+<label>
+<li><a href="index.html">Home</a></li>
+<li><a href="loginTrash.html">Login</a></li>
+</label>
+
+
+<script>
+function fun()
+{
+var x=document.getElementById("email").value;
+var y=document.getElementById("password").value;
+
+if(isNaN(x) && y.match(/manish123/))
+{
+prompt("you can login");
+}
+else
+{
+alert("you can't login");
+}
+function RESET12()
+{
+var z=document.getElementById("resetform");
+z.reset();
+}
+}
+</script>
+
+<div class="firstimage"></div>
+<div class="second">
+<center>
+<u>LOGIN HERE<u>
+</center>
+<form id="resetform">
+
+
+<input type="text" id="email" placeholder="LOGIN ID"><br><br>
+<input type="password" id="password" placeholder="PASSWORD">
+<ul>
+<li><button onclick="fun()">LOGIN</button></li>
+<li><button onclick="RESET12()">RESET</button></li>
+</ul>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p>Not Registerd yet? Click <a href="regtrash.html">here</a>
+
+</p>
+
+</div>
+
+</body>
+</html>

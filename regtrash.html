@@ -1,0 +1,90 @@
+
+
+
+
+
+<html>
+<head>
+<script>
+function myfunction()
+{
+
+var x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+}
+function secfunction()
+{
+var y,text;
+y=document.getElementById("z").value;
+if(y.length===10)
+{
+text="a valid number";
+}
+else
+{
+text="enter a 10 digit number";
+}
+var color="red";
+document.getElementById("demo").innerHTML=text;
+}
+
+function myFunction2() {
+  var p = document.getElementById("myInput");
+  if (p.type === "password") {
+    p.type = "text";
+  } else {
+    p.type = "password";
+  }
+}
+
+</script>
+
+<link rel="stylesheet" href="style.css">
+
+<div>
+<li><a href="index.html">Home</a></li>
+<li><a href="loginTrash.html">Login</a></li>
+</div>
+
+
+<center><h1><u><font color="white" size="20px" >Schedule Pickup</font></u></h1></center></head>
+
+
+<body class="back">
+
+<form class="box">
+
+
+<font color="white" size="5">
+
+
+<center>
+<br>
+
+<u> Name </u>  <br>    :<input class="square" type="text" id="fname" onblur="myfunction()"  align="right" placeholder="Enter Name" ><br><br>
+
+
+<u>Email-Id</u><br>     : <input class="square" type="text"   size="50" placeholder="E-Mail" ><br><br> 
+
+<u>Password</u> <br> :<input class="square" type="password" size="50" placeholder="Password" id="myInput"><br><br>
+
+
+<input type="checkbox" onclick="myFunction2()">Show Password<br><br>
+
+
+<u>Mobile Number</u><br>         :<input class="square" id="z" type="number" size="50" placeholder="Enter 10 digit Number"><br>
+<p  id="demo"><font color="red"></font></p>
+Pickup Time <br>
+<input type="time" class="square">
+<br>
+<h1><input class="buttongreen" type="button" onclick="secfunction()" value="SaveMyData" ></h1>
+
+<h1><input class="buttonred" type="Reset" value="ResetData" ></h1>
+</center>
+
+</font>
+
+</form>
+
+</body> 
+</html>
